@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.module.yf.dao.InspectionTaskMapper">
+  <resultMap id="BaseResultMap" type="com.module.yf.model.InspectionTask">
+    <constructor>
+      <idArg column="ID" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="SpotInspectionWorker" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="EquipName" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="EquipNo" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="ExecuteTime" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="Frequency" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="CurStatus" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="CreateDate" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="IsValid" javaType="java.lang.Boolean" jdbcType="BIT" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID, SpotInspectionWorker, EquipName, EquipNo, ExecuteTime, Frequency, CurStatus, 
+    CreateDate, IsValid
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from SpotInspection_Task
+    where ID = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from SpotInspection_Task
+    where ID = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.module.yf.model.InspectionTask">
+    insert into SpotInspection_Task (ID, SpotInspectionWorker, EquipName, 
+      EquipNo, ExecuteTime, Frequency, 
+      CurStatus, CreateDate, IsValid
+      )
+    values (#{id,jdbcType=INTEGER}, #{spotinspectionworker,jdbcType=VARCHAR}, #{equipname,jdbcType=VARCHAR}, 
+      #{equipno,jdbcType=NVARCHAR}, #{executetime,jdbcType=TIMESTAMP}, #{frequency,jdbcType=NVARCHAR}, 
+      #{curstatus,jdbcType=NVARCHAR}, #{createdate,jdbcType=TIMESTAMP}, #{isvalid,jdbcType=BIT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.module.yf.model.InspectionTask">
+    insert into SpotInspection_Task
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="spotinspectionworker != null">
+        SpotInspectionWorker,
+      </if>
+      <if test="equipname != null">
+        EquipName,
+      </if>
+      <if test="equipno != null">
+        EquipNo,
+      </if>
+      <if test="executetime != null">
+        ExecuteTime,
+      </if>
+      <if test="frequency != null">
+        Frequency,
+      </if>
+      <if test="curstatus != null">
+        CurStatus,
+      </if>
+      <if test="createdate != null">
+        CreateDate,
+      </if>
+      <if test="isvalid != null">
+        IsValid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="spotinspectionworker != null">
+        #{spotinspectionworker,jdbcType=VARCHAR},
+      </if>
+      <if test="equipname != null">
+        #{equipname,jdbcType=VARCHAR},
+      </if>
+      <if test="equipno != null">
+        #{equipno,jdbcType=NVARCHAR},
+      </if>
+      <if test="executetime != null">
+        #{executetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="frequency != null">
+        #{frequency,jdbcType=NVARCHAR},
+      </if>
+      <if test="curstatus != null">
+        #{curstatus,jdbcType=NVARCHAR},
+      </if>
+      <if test="createdate != null">
+        #{createdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isvalid != null">
+        #{isvalid,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.module.yf.model.InspectionTask">
+    update SpotInspection_Task
+    <set>
+      <if test="spotinspectionworker != null">
+        SpotInspectionWorker = #{spotinspectionworker,jdbcType=VARCHAR},
+      </if>
+      <if test="equipname != null">
+        EquipName = #{equipname,jdbcType=VARCHAR},
+      </if>
+      <if test="equipno != null">
+        EquipNo = #{equipno,jdbcType=NVARCHAR},
+      </if>
+      <if test="executetime != null">
+        ExecuteTime = #{executetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="frequency != null">
+        Frequency = #{frequency,jdbcType=NVARCHAR},
+      </if>
+      <if test="curstatus != null">
+        CurStatus = #{curstatus,jdbcType=NVARCHAR},
+      </if>
+      <if test="createdate != null">
+        CreateDate = #{createdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isvalid != null">
+        IsValid = #{isvalid,jdbcType=BIT},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.module.yf.model.InspectionTask">
+    update SpotInspection_Task
+    set SpotInspectionWorker = #{spotinspectionworker,jdbcType=VARCHAR},
+      EquipName = #{equipname,jdbcType=VARCHAR},
+      EquipNo = #{equipno,jdbcType=NVARCHAR},
+      ExecuteTime = #{executetime,jdbcType=TIMESTAMP},
+      Frequency = #{frequency,jdbcType=NVARCHAR},
+      CurStatus = #{curstatus,jdbcType=NVARCHAR},
+      CreateDate = #{createdate,jdbcType=TIMESTAMP},
+      IsValid = #{isvalid,jdbcType=BIT}
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+
+</mapper>

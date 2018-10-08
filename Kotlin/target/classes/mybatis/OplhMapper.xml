@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.module.yf.dao.OplhMapper">
+  <resultMap id="BaseResultMap" type="com.module.yf.model.Oplh">
+    <constructor>
+      <idArg column="oplh_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="oplh_cptm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="oplh_wztm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="oplh_kssj" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="oplh_jssj" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="oplh_ztbz" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="oplh_bldm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="oplh_sjry" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="oplh_xjry" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="oplh_gwbz" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="oplh_gwnumber" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="oplh_gwks" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="oplh_gwjs" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="oplh_isfg" javaType="java.lang.Integer" jdbcType="INTEGER" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    oplh_id, oplh_cptm, oplh_wztm, oplh_kssj, oplh_jssj, oplh_ztbz, oplh_bldm, oplh_sjry, 
+    oplh_xjry, oplh_gwbz, oplh_gwnumber, oplh_gwks, oplh_gwjs, oplh_isfg
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from oplh_det
+    where oplh_id = #{oplhId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from oplh_det
+    where oplh_id = #{oplhId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.module.yf.model.Oplh">
+    insert into oplh_det (oplh_id, oplh_cptm, oplh_wztm, 
+      oplh_kssj, oplh_jssj, oplh_ztbz, 
+      oplh_bldm, oplh_sjry, oplh_xjry, 
+      oplh_gwbz, oplh_gwnumber, oplh_gwks, 
+      oplh_gwjs, oplh_isfg)
+    values (#{oplhId,jdbcType=INTEGER}, #{oplhCptm,jdbcType=NVARCHAR}, #{oplhWztm,jdbcType=NVARCHAR}, 
+      #{oplhKssj,jdbcType=TIMESTAMP}, #{oplhJssj,jdbcType=TIMESTAMP}, #{oplhZtbz,jdbcType=INTEGER}, 
+      #{oplhBldm,jdbcType=NVARCHAR}, #{oplhSjry,jdbcType=NVARCHAR}, #{oplhXjry,jdbcType=NVARCHAR}, 
+      #{oplhGwbz,jdbcType=INTEGER}, #{oplhGwnumber,jdbcType=INTEGER}, #{oplhGwks,jdbcType=TIMESTAMP}, 
+      #{oplhGwjs,jdbcType=TIMESTAMP}, #{oplhIsfg,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.module.yf.model.Oplh">
+    insert into oplh_det
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="oplhId != null">
+        oplh_id,
+      </if>
+      <if test="oplhCptm != null">
+        oplh_cptm,
+      </if>
+      <if test="oplhWztm != null">
+        oplh_wztm,
+      </if>
+      <if test="oplhKssj != null">
+        oplh_kssj,
+      </if>
+      <if test="oplhJssj != null">
+        oplh_jssj,
+      </if>
+      <if test="oplhZtbz != null">
+        oplh_ztbz,
+      </if>
+      <if test="oplhBldm != null">
+        oplh_bldm,
+      </if>
+      <if test="oplhSjry != null">
+        oplh_sjry,
+      </if>
+      <if test="oplhXjry != null">
+        oplh_xjry,
+      </if>
+      <if test="oplhGwbz != null">
+        oplh_gwbz,
+      </if>
+      <if test="oplhGwnumber != null">
+        oplh_gwnumber,
+      </if>
+      <if test="oplhGwks != null">
+        oplh_gwks,
+      </if>
+      <if test="oplhGwjs != null">
+        oplh_gwjs,
+      </if>
+      <if test="oplhIsfg != null">
+        oplh_isfg,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="oplhId != null">
+        #{oplhId,jdbcType=INTEGER},
+      </if>
+      <if test="oplhCptm != null">
+        #{oplhCptm,jdbcType=NVARCHAR},
+      </if>
+      <if test="oplhWztm != null">
+        #{oplhWztm,jdbcType=NVARCHAR},
+      </if>
+      <if test="oplhKssj != null">
+        #{oplhKssj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="oplhJssj != null">
+        #{oplhJssj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="oplhZtbz != null">
+        #{oplhZtbz,jdbcType=INTEGER},
+      </if>
+      <if test="oplhBldm != null">
+        #{oplhBldm,jdbcType=NVARCHAR},
+      </if>
+      <if test="oplhSjry != null">
+        #{oplhSjry,jdbcType=NVARCHAR},
+      </if>
+      <if test="oplhXjry != null">
+        #{oplhXjry,jdbcType=NVARCHAR},
+      </if>
+      <if test="oplhGwbz != null">
+        #{oplhGwbz,jdbcType=INTEGER},
+      </if>
+      <if test="oplhGwnumber != null">
+        #{oplhGwnumber,jdbcType=INTEGER},
+      </if>
+      <if test="oplhGwks != null">
+        #{oplhGwks,jdbcType=TIMESTAMP},
+      </if>
+      <if test="oplhGwjs != null">
+        #{oplhGwjs,jdbcType=TIMESTAMP},
+      </if>
+      <if test="oplhIsfg != null">
+        #{oplhIsfg,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.module.yf.model.Oplh">
+    update oplh_det
+    <set>
+      <if test="oplhCptm != null">
+        oplh_cptm = #{oplhCptm,jdbcType=NVARCHAR},
+      </if>
+      <if test="oplhWztm != null">
+        oplh_wztm = #{oplhWztm,jdbcType=NVARCHAR},
+      </if>
+      <if test="oplhKssj != null">
+        oplh_kssj = #{oplhKssj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="oplhJssj != null">
+        oplh_jssj = #{oplhJssj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="oplhZtbz != null">
+        oplh_ztbz = #{oplhZtbz,jdbcType=INTEGER},
+      </if>
+      <if test="oplhBldm != null">
+        oplh_bldm = #{oplhBldm,jdbcType=NVARCHAR},
+      </if>
+      <if test="oplhSjry != null">
+        oplh_sjry = #{oplhSjry,jdbcType=NVARCHAR},
+      </if>
+      <if test="oplhXjry != null">
+        oplh_xjry = #{oplhXjry,jdbcType=NVARCHAR},
+      </if>
+      <if test="oplhGwbz != null">
+        oplh_gwbz = #{oplhGwbz,jdbcType=INTEGER},
+      </if>
+      <if test="oplhGwnumber != null">
+        oplh_gwnumber = #{oplhGwnumber,jdbcType=INTEGER},
+      </if>
+      <if test="oplhGwks != null">
+        oplh_gwks = #{oplhGwks,jdbcType=TIMESTAMP},
+      </if>
+      <if test="oplhGwjs != null">
+        oplh_gwjs = #{oplhGwjs,jdbcType=TIMESTAMP},
+      </if>
+      <if test="oplhIsfg != null">
+        oplh_isfg = #{oplhIsfg,jdbcType=INTEGER},
+      </if>
+    </set>
+    where oplh_id = #{oplhId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.module.yf.model.Oplh">
+    update oplh_det
+    set oplh_cptm = #{oplhCptm,jdbcType=NVARCHAR},
+      oplh_wztm = #{oplhWztm,jdbcType=NVARCHAR},
+      oplh_kssj = #{oplhKssj,jdbcType=TIMESTAMP},
+      oplh_jssj = #{oplhJssj,jdbcType=TIMESTAMP},
+      oplh_ztbz = #{oplhZtbz,jdbcType=INTEGER},
+      oplh_bldm = #{oplhBldm,jdbcType=NVARCHAR},
+      oplh_sjry = #{oplhSjry,jdbcType=NVARCHAR},
+      oplh_xjry = #{oplhXjry,jdbcType=NVARCHAR},
+      oplh_gwbz = #{oplhGwbz,jdbcType=INTEGER},
+      oplh_gwnumber = #{oplhGwnumber,jdbcType=INTEGER},
+      oplh_gwks = #{oplhGwks,jdbcType=TIMESTAMP},
+      oplh_gwjs = #{oplhGwjs,jdbcType=TIMESTAMP},
+      oplh_isfg = #{oplhIsfg,jdbcType=INTEGER}
+    where oplh_id = #{oplhId,jdbcType=INTEGER}
+  </update>
+
+</mapper>

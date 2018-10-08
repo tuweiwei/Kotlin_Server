@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.module.yf.dao.Op300Mapper">
+  <resultMap id="BaseResultMap" type="com.module.yf.model.Op300">
+    <constructor>
+      <arg column="op300_tm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_zldm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_gydm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_gwdm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_xbdm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_sl" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="op300_cgcs" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="op300_ztbz" javaType="java.lang.Boolean" jdbcType="BIT" />
+      <arg column="op300_okbz" javaType="java.lang.Boolean" jdbcType="BIT" />
+      <arg column="op300_bldm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_cltm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_jlrq" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="op300_jlry" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="op300_bldm1" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_blms" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="op300_moeid" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="op300_zzdh" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_gwmc" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_bz" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="op300_bsl" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_isfg" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_wldm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_wztm" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_jqwz" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="op300_batch" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <insert id="insert" parameterType="com.module.yf.model.Op300">
+    insert into op300_det (op300_tm, op300_zldm, op300_gydm, 
+      op300_gwdm, op300_xbdm, op300_sl, 
+      op300_cgcs, op300_ztbz, op300_okbz, 
+      op300_bldm, op300_cltm, op300_jlrq, 
+      op300_jlry, op300_id, op300_bldm1, 
+      op300_blms, op300_moeid, op300_zzdh, 
+      op300_gwmc, op300_bz, op300_bsl, 
+      op300_isfg, op300_wldm, op300_wztm, 
+      op300_jqwz, op300_batch)
+    values (#{op300Tm,jdbcType=NVARCHAR}, #{op300Zldm,jdbcType=NVARCHAR}, #{op300Gydm,jdbcType=NVARCHAR}, 
+      #{op300Gwdm,jdbcType=NVARCHAR}, #{op300Xbdm,jdbcType=NVARCHAR}, #{op300Sl,jdbcType=INTEGER}, 
+      #{op300Cgcs,jdbcType=INTEGER}, #{op300Ztbz,jdbcType=BIT}, #{op300Okbz,jdbcType=BIT}, 
+      #{op300Bldm,jdbcType=NVARCHAR}, #{op300Cltm,jdbcType=NVARCHAR}, #{op300Jlrq,jdbcType=TIMESTAMP}, 
+      #{op300Jlry,jdbcType=NVARCHAR}, #{op300Id,jdbcType=INTEGER}, #{op300Bldm1,jdbcType=NVARCHAR}, 
+      #{op300Blms,jdbcType=VARCHAR}, #{op300Moeid,jdbcType=INTEGER}, #{op300Zzdh,jdbcType=NVARCHAR}, 
+      #{op300Gwmc,jdbcType=NVARCHAR}, #{op300Bz,jdbcType=INTEGER}, #{op300Bsl,jdbcType=NVARCHAR}, 
+      #{op300Isfg,jdbcType=NVARCHAR}, #{op300Wldm,jdbcType=NVARCHAR}, #{op300Wztm,jdbcType=NVARCHAR}, 
+      #{op300Jqwz,jdbcType=NVARCHAR}, #{op300Batch,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.module.yf.model.Op300">
+    insert into op300_det
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="op300Tm != null">
+        op300_tm,
+      </if>
+      <if test="op300Zldm != null">
+        op300_zldm,
+      </if>
+      <if test="op300Gydm != null">
+        op300_gydm,
+      </if>
+      <if test="op300Gwdm != null">
+        op300_gwdm,
+      </if>
+      <if test="op300Xbdm != null">
+        op300_xbdm,
+      </if>
+      <if test="op300Sl != null">
+        op300_sl,
+      </if>
+      <if test="op300Cgcs != null">
+        op300_cgcs,
+      </if>
+      <if test="op300Ztbz != null">
+        op300_ztbz,
+      </if>
+      <if test="op300Okbz != null">
+        op300_okbz,
+      </if>
+      <if test="op300Bldm != null">
+        op300_bldm,
+      </if>
+      <if test="op300Cltm != null">
+        op300_cltm,
+      </if>
+      <if test="op300Jlrq != null">
+        op300_jlrq,
+      </if>
+      <if test="op300Jlry != null">
+        op300_jlry,
+      </if>
+      <if test="op300Id != null">
+        op300_id,
+      </if>
+      <if test="op300Bldm1 != null">
+        op300_bldm1,
+      </if>
+      <if test="op300Blms != null">
+        op300_blms,
+      </if>
+      <if test="op300Moeid != null">
+        op300_moeid,
+      </if>
+      <if test="op300Zzdh != null">
+        op300_zzdh,
+      </if>
+      <if test="op300Gwmc != null">
+        op300_gwmc,
+      </if>
+      <if test="op300Bz != null">
+        op300_bz,
+      </if>
+      <if test="op300Bsl != null">
+        op300_bsl,
+      </if>
+      <if test="op300Isfg != null">
+        op300_isfg,
+      </if>
+      <if test="op300Wldm != null">
+        op300_wldm,
+      </if>
+      <if test="op300Wztm != null">
+        op300_wztm,
+      </if>
+      <if test="op300Jqwz != null">
+        op300_jqwz,
+      </if>
+      <if test="op300Batch != null">
+        op300_batch,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="op300Tm != null">
+        #{op300Tm,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Zldm != null">
+        #{op300Zldm,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Gydm != null">
+        #{op300Gydm,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Gwdm != null">
+        #{op300Gwdm,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Xbdm != null">
+        #{op300Xbdm,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Sl != null">
+        #{op300Sl,jdbcType=INTEGER},
+      </if>
+      <if test="op300Cgcs != null">
+        #{op300Cgcs,jdbcType=INTEGER},
+      </if>
+      <if test="op300Ztbz != null">
+        #{op300Ztbz,jdbcType=BIT},
+      </if>
+      <if test="op300Okbz != null">
+        #{op300Okbz,jdbcType=BIT},
+      </if>
+      <if test="op300Bldm != null">
+        #{op300Bldm,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Cltm != null">
+        #{op300Cltm,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Jlrq != null">
+        #{op300Jlrq,jdbcType=TIMESTAMP},
+      </if>
+      <if test="op300Jlry != null">
+        #{op300Jlry,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Id != null">
+        #{op300Id,jdbcType=INTEGER},
+      </if>
+      <if test="op300Bldm1 != null">
+        #{op300Bldm1,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Blms != null">
+        #{op300Blms,jdbcType=VARCHAR},
+      </if>
+      <if test="op300Moeid != null">
+        #{op300Moeid,jdbcType=INTEGER},
+      </if>
+      <if test="op300Zzdh != null">
+        #{op300Zzdh,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Gwmc != null">
+        #{op300Gwmc,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Bz != null">
+        #{op300Bz,jdbcType=INTEGER},
+      </if>
+      <if test="op300Bsl != null">
+        #{op300Bsl,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Isfg != null">
+        #{op300Isfg,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Wldm != null">
+        #{op300Wldm,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Wztm != null">
+        #{op300Wztm,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Jqwz != null">
+        #{op300Jqwz,jdbcType=NVARCHAR},
+      </if>
+      <if test="op300Batch != null">
+        #{op300Batch,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

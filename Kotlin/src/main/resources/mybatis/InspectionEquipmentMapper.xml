@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.module.yf.dao.InspectionEquipmentMapper">
+  <resultMap id="BaseResultMap" type="com.module.yf.model.InspectionEquipment">
+    <constructor>
+      <idArg column="ID" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="EquipmentNo" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="EquipmentName" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="Line" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="UseDepartment" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="MaintainLevel" javaType="java.lang.String" jdbcType="NVARCHAR" />
+      <arg column="MaintainPeriod" javaType="java.lang.String" jdbcType="NVARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID, EquipmentNo, EquipmentName, Line, UseDepartment, MaintainLevel, MaintainPeriod
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from SpotInspection_Equip
+    where ID = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from SpotInspection_Equip
+    where ID = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.module.yf.model.InspectionEquipment">
+    insert into SpotInspection_Equip (ID, EquipmentNo, EquipmentName, 
+      Line, UseDepartment, MaintainLevel, 
+      MaintainPeriod)
+    values (#{id,jdbcType=INTEGER}, #{equipmentno,jdbcType=NVARCHAR}, #{equipmentname,jdbcType=NVARCHAR}, 
+      #{line,jdbcType=NVARCHAR}, #{usedepartment,jdbcType=NVARCHAR}, #{maintainlevel,jdbcType=NVARCHAR}, 
+      #{maintainperiod,jdbcType=NVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.module.yf.model.InspectionEquipment">
+    insert into SpotInspection_Equip
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="equipmentno != null">
+        EquipmentNo,
+      </if>
+      <if test="equipmentname != null">
+        EquipmentName,
+      </if>
+      <if test="line != null">
+        Line,
+      </if>
+      <if test="usedepartment != null">
+        UseDepartment,
+      </if>
+      <if test="maintainlevel != null">
+        MaintainLevel,
+      </if>
+      <if test="maintainperiod != null">
+        MaintainPeriod,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="equipmentno != null">
+        #{equipmentno,jdbcType=NVARCHAR},
+      </if>
+      <if test="equipmentname != null">
+        #{equipmentname,jdbcType=NVARCHAR},
+      </if>
+      <if test="line != null">
+        #{line,jdbcType=NVARCHAR},
+      </if>
+      <if test="usedepartment != null">
+        #{usedepartment,jdbcType=NVARCHAR},
+      </if>
+      <if test="maintainlevel != null">
+        #{maintainlevel,jdbcType=NVARCHAR},
+      </if>
+      <if test="maintainperiod != null">
+        #{maintainperiod,jdbcType=NVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.module.yf.model.InspectionEquipment">
+    update SpotInspection_Equip
+    <set>
+      <if test="equipmentno != null">
+        EquipmentNo = #{equipmentno,jdbcType=NVARCHAR},
+      </if>
+      <if test="equipmentname != null">
+        EquipmentName = #{equipmentname,jdbcType=NVARCHAR},
+      </if>
+      <if test="line != null">
+        Line = #{line,jdbcType=NVARCHAR},
+      </if>
+      <if test="usedepartment != null">
+        UseDepartment = #{usedepartment,jdbcType=NVARCHAR},
+      </if>
+      <if test="maintainlevel != null">
+        MaintainLevel = #{maintainlevel,jdbcType=NVARCHAR},
+      </if>
+      <if test="maintainperiod != null">
+        MaintainPeriod = #{maintainperiod,jdbcType=NVARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.module.yf.model.InspectionEquipment">
+    update SpotInspection_Equip
+    set EquipmentNo = #{equipmentno,jdbcType=NVARCHAR},
+      EquipmentName = #{equipmentname,jdbcType=NVARCHAR},
+      Line = #{line,jdbcType=NVARCHAR},
+      UseDepartment = #{usedepartment,jdbcType=NVARCHAR},
+      MaintainLevel = #{maintainlevel,jdbcType=NVARCHAR},
+      MaintainPeriod = #{maintainperiod,jdbcType=NVARCHAR}
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+
+</mapper>
