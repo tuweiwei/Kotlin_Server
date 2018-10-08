@@ -10,8 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4a56a77-3dd4-4fb0-a6a3-3d212ece8db6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Kotlin_war2/kotlin.war" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionItemMapper.xml" afterPath="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionResultMapper.xml" afterPath="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionResultMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionTaskMapper.xml" afterPath="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionTaskMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Rbac_UserMapper.xml" afterPath="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Rbac_UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/TidModelMapper.xml" afterPath="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/TidModelMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/Kotlin/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,8 +27,139 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Kotlin-Server" />
+  </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="InspectionTaskMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/InspectionTaskMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12">
+              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Op100Mapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/Op100Mapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Op200Mapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/Op200Mapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InspectionItemMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionItemMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <folding>
+                <marker date="1539001112656" expanded="true" signature="1120:1235" ph="select from SpotInspection_Item" />
+                <marker date="1539001112656" expanded="true" signature="1366:1510" ph="select from SpotInspection_Item" />
+                <marker date="1539001112656" expanded="true" signature="1597:1666" ph="delete from " />
+                <marker date="1539001112656" expanded="true" signature="1757:2080" ph="insert into SpotInspection_Item... " />
+                <marker date="1539001112656" expanded="true" signature="3377:3974" ph="update SpotI... " />
+                <marker date="1539001112656" expanded="true" signature="4077:4400" ph="update SpotI... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rbac_UserMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Rbac_UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="90" column="2" lean-forward="false" selection-start-line="90" selection-start-column="2" selection-end-line="90" selection-end-column="2" />
+              <folding>
+                <marker date="1539001305020" expanded="true" signature="1077:1182" ph="select from RBAC_User" />
+                <marker date="1539001305020" expanded="true" signature="1268:1327" ph="delete from " />
+                <marker date="1539001305020" expanded="true" signature="1413:1740" ph="insert into RBAC_User... " />
+                <marker date="1539001305020" expanded="true" signature="3288:3932" ph="update RBAC_... " />
+                <marker date="1539001305020" expanded="true" signature="4030:4364" ph="update RBAC_... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="170" column="29" lean-forward="true" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+              <folding>
+                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#845#846#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rbac_UserMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/Rbac_UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SemMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/SemMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12">
+              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -48,6 +184,8 @@
       <find>typeParam</find>
       <find>com.module.user.dao.impl.SmsDaoImpl</find>
       <find>UserNo</find>
+      <find>Custom_Column_List</find>
+      <find>selectByUsername</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,19 +237,19 @@
         <option value="$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/model/InspectionResult.java" />
         <option value="$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/Rbac_UserMapper.java" />
         <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionEquipmentMapper.xml" />
-        <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionItemMapper.xml" />
-        <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionResultMapper.xml" />
-        <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionTaskMapper.xml" />
         <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Op100Mapper.xml" />
         <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Op200Mapper.xml" />
         <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Op300Mapper.xml" />
         <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Op400Mapper.xml" />
         <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Op500Mapper.xml" />
         <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/OplhMapper.xml" />
-        <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Rbac_UserMapper.xml" />
         <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/ScmMapper.xml" />
-        <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/TidModelMapper.xml" />
         <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/SemMapper.xml" />
+        <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionTaskMapper.xml" />
+        <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionResultMapper.xml" />
+        <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/TidModelMapper.xml" />
+        <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionItemMapper.xml" />
+        <option value="$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Rbac_UserMapper.xml" />
       </list>
     </option>
   </component>
@@ -181,9 +319,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="399" />
-    <option name="y" value="58" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="30" />
+    <option name="y" value="25" />
     <option name="width" value="1390" />
     <option name="height" value="785" />
   </component>
@@ -717,47 +855,56 @@
       <workItem from="1538720318910" duration="18031000" />
       <workItem from="1538843817863" duration="5553000" />
       <workItem from="1538962972411" duration="7241000" />
-      <workItem from="1538983394569" duration="3391000" />
+      <workItem from="1538983394569" duration="7453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191952000" />
+    <option name="totallyTimeSpent" value="196014000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="399" y="58" width="1390" height="785" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6275773" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1406015" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59407216" sideWeight="0.8972222" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.892638" sideWeight="0.49166667" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8804781" sideWeight="0.5114613" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13395415" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31578946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3925354" sideWeight="0.72986114" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43814433" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26898327" sideWeight="0.3326389" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33864543" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66533864" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5489691" sideWeight="0.8972222" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56706506" sideWeight="0.48853868" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24305555" sideWeight="0.8142857" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24305555" sideWeight="0.18571429" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.49444443" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25071633" sideWeight="0.4951267" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26898327" sideWeight="0.3326389" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.49444443" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -803,30 +950,11 @@
       </configuration>
     </watches-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Kotlin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/domain/GetTodayTaskReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/controller/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/domain/TaskResultReq.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -894,6 +1022,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="100" column="8" lean-forward="false" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+          <folding>
+            <marker date="1534488799247" expanded="false" signature="2125:2143" ph="SELECT 1" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -911,72 +1042,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="143" column="43" lean-forward="false" selection-start-line="143" selection-start-column="43" selection-end-line="143" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/model/Rbac_User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <marker date="1538962210631" expanded="true" signature="1842:1849" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/controller/TidController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1593">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/InspectionItemMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/TidModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/service/TidService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/model/TidModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -994,16 +1063,6 @@
         <state relative-caret-position="54">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/InspectionTaskMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="22" column="71" lean-forward="true" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,71 +1093,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/controller/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="172" column="51" lean-forward="false" selection-start-line="172" selection-start-column="51" selection-end-line="172" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/service/InspectionTaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/service/impl/InspectionTaskServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/InspectionResultMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding>
-            <element signature="e#585#586#0" expanded="false" />
-            <element signature="e#652#653#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/InspectionEquipmentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/model/InspectionEquipment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/Rbac_UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1121,48 +1119,6 @@
             <marker date="1538978860512" expanded="true" signature="1513:1900" ph="insert into SpotInspection_Equip... " />
             <marker date="1538978860512" expanded="true" signature="3403:4131" ph="update SpotI... " />
             <marker date="1538978860512" expanded="true" signature="4239:4633" ph="update SpotI... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionItemMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="106" column="11" lean-forward="true" selection-start-line="106" selection-start-column="11" selection-end-line="106" selection-end-column="11" />
-          <folding>
-            <marker date="1538978882841" expanded="true" signature="1023:1138" ph="select from SpotInspection_Item" />
-            <marker date="1538978882841" expanded="true" signature="1224:1293" ph="delete from " />
-            <marker date="1538978882841" expanded="true" signature="1384:1707" ph="insert into SpotInspection_Item... " />
-            <marker date="1538978882841" expanded="true" signature="3004:3601" ph="update SpotI... " />
-            <marker date="1538978882841" expanded="true" signature="3704:4027" ph="update SpotI... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionResultMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding>
-            <marker date="1538978915790" expanded="true" signature="1456:1573" ph="select from SpotInspection_Result" />
-            <marker date="1538978915790" expanded="true" signature="1659:1730" ph="delete from " />
-            <marker date="1538978915790" expanded="true" signature="1823:2342" ph="insert into SpotInspection_Result... " />
-            <marker date="1538978915790" expanded="true" signature="4353:5401" ph="update SpotI... " />
-            <marker date="1538978915790" expanded="true" signature="5506:6046" ph="update SpotI... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionTaskMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="142" column="11" lean-forward="true" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
-          <folding>
-            <marker date="1538978915716" expanded="true" signature="1312:1427" ph="select from SpotInspection_Task" />
-            <marker date="1538978915716" expanded="true" signature="1509:1578" ph="delete from " />
-            <marker date="1538978915716" expanded="true" signature="1669:2142" ph="insert into SpotInspection_Task... " />
-            <marker date="1538978915716" expanded="true" signature="3923:4833" ph="update SpotI... " />
-            <marker date="1538978915716" expanded="true" signature="4936:5416" ph="update SpotI... " />
           </folding>
         </state>
       </provider>
@@ -1229,28 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/SemMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Rbac_UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="115" column="39" lean-forward="true" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
-          <folding>
-            <marker date="1538979095155" expanded="true" signature="1077:1182" ph="select from RBAC_User" />
-            <marker date="1538979095155" expanded="true" signature="1268:1327" ph="delete from " />
-            <marker date="1538979095155" expanded="true" signature="1413:1740" ph="insert into RBAC_User... " />
-            <marker date="1538979095155" expanded="true" signature="3115:3759" ph="update RBAC_... " />
-            <marker date="1538979095155" expanded="true" signature="3857:4191" ph="update RBAC_... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/SemMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -1279,20 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/TidModelMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="142" column="11" lean-forward="true" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
-          <folding>
-            <marker date="1538979466161" expanded="true" signature="1289:1399" ph="select from Tid_det" />
-            <marker date="1538979466161" expanded="true" signature="1485:1549" ph="delete from " />
-            <marker date="1538979466161" expanded="true" signature="1634:2080" ph="insert into Tid_det... " />
-            <marker date="1538979466161" expanded="true" signature="3792:4657" ph="update Tid_d... " />
-            <marker date="1538979466161" expanded="true" signature="4754:5207" ph="update Tid_d... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/OplhMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
@@ -1303,6 +1223,249 @@
             <marker date="1538979012440" expanded="true" signature="2097:2777" ph="insert into oplh_det... " />
             <marker date="1538979012440" expanded="true" signature="5261:6630" ph="update oplh_... " />
             <marker date="1538979012440" expanded="true" signature="6723:7431" ph="update oplh_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/controller/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="125" column="77" lean-forward="true" selection-start-line="125" selection-start-column="77" selection-end-line="125" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/service/InspectionTaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/service/impl/InspectionTaskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="50" column="45" lean-forward="false" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionTaskMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="e#1858#1862#0" expanded="true" />
+            <marker date="1538994054156" expanded="true" signature="1312:1426" ph="select from SpotInspection_Task" />
+            <marker date="1538994054156" expanded="true" signature="1518:1594" ph="select from SpotInspection_Task" />
+            <marker date="1538994054156" expanded="true" signature="1720:1891" ph="select from SpotInspection_Task" />
+            <marker date="1538994054156" expanded="true" signature="2023:2156" ph="SELECT from SpotInspection_Task" />
+            <marker date="1538994054156" expanded="true" signature="2237:2323" ph="update SpotI... " />
+            <marker date="1538994054156" expanded="true" signature="2411:2480" ph="delete from " />
+            <marker date="1538994054156" expanded="true" signature="2572:2980" ph="insert into SpotInspection_Task... " />
+            <marker date="1538994054156" expanded="true" signature="4634:5458" ph="update SpotI... " />
+            <marker date="1538994054156" expanded="true" signature="5562:5984" ph="update SpotI... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/controller/TidController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/InspectionEquipmentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/InspectionItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/InspectionResultMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionResultMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="47" column="11" lean-forward="false" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+          <folding>
+            <marker date="1538994168871" expanded="true" signature="1456:1573" ph="select from SpotInspection_Result" />
+            <marker date="1538994168871" expanded="true" signature="1659:1730" ph="delete from " />
+            <marker date="1538994168871" expanded="true" signature="1823:2342" ph="insert into SpotInspection_Result... " />
+            <marker date="1538994168871" expanded="true" signature="2433:2511" ph="select from SpotInspection_Result" />
+            <marker date="1538994168871" expanded="true" signature="4523:5571" ph="update SpotI... " />
+            <marker date="1538994168871" expanded="true" signature="5676:6216" ph="update SpotI... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/InspectionTaskMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/Op100Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/SemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/TidModelMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="194" column="9" lean-forward="false" selection-start-line="194" selection-start-column="9" selection-end-line="194" selection-end-column="9" />
+          <folding>
+            <element signature="e#2273#2277#0" expanded="true" />
+            <marker date="1539000839663" expanded="true" signature="1295:1404" ph="select from Tid_det" />
+            <marker date="1539000839663" expanded="true" signature="1500:1591" ph="select from Tid_det" />
+            <marker date="1539000839663" expanded="true" signature="1664:1765" ph="select COUNT... Tid_det" />
+            <marker date="1539000839663" expanded="true" signature="1842:1964" ph="select top 1... Tid_det" />
+            <marker date="1539000839663" expanded="true" signature="2041:2138" ph="select COUNT... Tid_det" />
+            <marker date="1539000839663" expanded="true" signature="2218:2313" ph="select disti... Tid_det" />
+            <marker date="1539000839663" expanded="true" signature="2381:2478" ph="select top 1... Tid_det" />
+            <marker date="1539000839663" expanded="true" signature="2548:2618" ph="select count... Tid_det" />
+            <marker date="1539000839663" expanded="true" signature="2716:2790" ph="select 1 fro... Tid_det" />
+            <marker date="1539000839663" expanded="true" signature="2878:2942" ph="delete from " />
+            <marker date="1539000839663" expanded="true" signature="3028:3458" ph="insert into Tid_det... " />
+            <marker date="1539000839663" expanded="true" signature="5192:6066" ph="update Tid_d... " />
+            <marker date="1539000839663" expanded="true" signature="6164:6603" ph="update Tid_d... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/model/TidModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/TidModelMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/Op300Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/Op200Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/InspectionItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <marker date="1539001112656" expanded="true" signature="1120:1235" ph="select from SpotInspection_Item" />
+            <marker date="1539001112656" expanded="true" signature="1366:1510" ph="select from SpotInspection_Item" />
+            <marker date="1539001112656" expanded="true" signature="1597:1666" ph="delete from " />
+            <marker date="1539001112656" expanded="true" signature="1757:2080" ph="insert into SpotInspection_Item... " />
+            <marker date="1539001112656" expanded="true" signature="3377:3974" ph="update SpotI... " />
+            <marker date="1539001112656" expanded="true" signature="4077:4400" ph="update SpotI... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="170" column="29" lean-forward="true" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/model/Rbac_User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <marker date="1538962210631" expanded="true" signature="1842:1849" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding>
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/java/com/module/yf/dao/Rbac_UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kotlin/src/main/resources/mybatis/Rbac_UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="90" column="2" lean-forward="false" selection-start-line="90" selection-start-column="2" selection-end-line="90" selection-end-column="2" />
+          <folding>
+            <marker date="1539001305020" expanded="true" signature="1077:1182" ph="select from RBAC_User" />
+            <marker date="1539001305020" expanded="true" signature="1268:1327" ph="delete from " />
+            <marker date="1539001305020" expanded="true" signature="1413:1740" ph="insert into RBAC_User... " />
+            <marker date="1539001305020" expanded="true" signature="3288:3932" ph="update RBAC_... " />
+            <marker date="1539001305020" expanded="true" signature="4030:4364" ph="update RBAC_... " />
           </folding>
         </state>
       </provider>

@@ -1,145 +1,195 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.module.yf.dao.TidModelMapper">
-  <resultMap id="BaseResultMap" type="com.module.yf.model.TidModel">
-    <constructor>
-      <idArg column="tid_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
-      <arg column="tid_tm" javaType="java.lang.String" jdbcType="NVARCHAR" />
-      <arg column="tid_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
-      <arg column="tid_ztbz" javaType="java.lang.Integer" jdbcType="INTEGER" />
-      <arg column="tid_jlrq" javaType="java.util.Date" jdbcType="TIMESTAMP" />
-      <arg column="tid_jlry" javaType="java.lang.String" jdbcType="NVARCHAR" />
-      <arg column="tid_expireSpan" javaType="java.lang.Integer" jdbcType="INTEGER" />
-      <arg column="tid_expireDate" javaType="java.util.Date" jdbcType="TIMESTAMP" />
-      <arg column="tid_bz" javaType="java.lang.String" jdbcType="NVARCHAR" />
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.module.yf.dao.TidModelMapper" >
+  <resultMap id="BaseResultMap" type="com.module.yf.model.TidModel" >
+    <constructor >
+      <idArg column="tid_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="tid_tm" jdbcType="NVARCHAR" javaType="java.lang.String" />
+      <arg column="tid_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="tid_ztbz" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="tid_jlrq" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="tid_jlry" jdbcType="NVARCHAR" javaType="java.lang.String" />
+      <arg column="tid_expireSpan" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="tid_expireDate" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="tid_bz" jdbcType="NVARCHAR" javaType="java.lang.String" />
     </constructor>
   </resultMap>
-  <sql id="Base_Column_List">
-    tid_id, tid_tm, tid_time, tid_ztbz, tid_jlrq, tid_jlry, tid_expireSpan, tid_expireDate, 
+  <sql id="Base_Column_List" >
+    tid_id, tid_tm, tid_time, tid_ztbz, tid_jlrq, tid_jlry, tid_expireSpan, tid_expireDate,
     tid_bz
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
     <include refid="Base_Column_List" />
     from Tid_det
     where tid_id = #{tidId,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+
+  <select id="selectByCode" parameterType="String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from Tid_det
+    where tid_tm = #{code}
+  </select>
+
+  <select id="selectIfRecycleByCode" resultType="int">
+    select
+    COUNT (tid_tm)
+    from Tid_det
+    where tid_tm = #{code,jdbcType=VARCHAR} AND tid_ztbz=4
+  </select>
+
+  <select id="selectLastByCode" resultMap="BaseResultMap">
+    select top 1
+    <include refid="Base_Column_List" />
+    from Tid_det
+    where tid_tm = #{code}
+    ORDER BY tid_id DESC
+  </select>
+
+  <select id="selectRecycleByCodeOfLast" resultType="int">
+    select
+    COUNT (tid_tm)
+    from Tid_det
+    where tid_tm = #{code} AND tid_bz = #{recycleFlag}
+  </select>
+
+  <select id="selectTodayCode" resultType="java.lang.String">
+    select distinct tid_tm from Tid_det
+    where tid_jlrq &gt; CONVERT(nvarchar(10),GETDATE(),120)
+  </select>
+
+  <select id="selectTypeByCode" resultType="map">
+    select top 1 tid_ztbz, tid_jlrq from Tid_det
+    where tid_tm = #{mcode}
+    ORDER BY tid_id DESC
+  </select>
+
+  <select id="selectUseMaxByCode" resultType="int">
+    select count(*) from Tid_det
+    where tid_tm=#{Code} and tid_ztbz = 1
+  </select>
+
+  <select id="selectIsTwiceRecycle" parameterType="String" resultType="String">
+    select 1 from Tid_det
+    where tid_tm=#{code} and tid_ztbz=3 and tid_bz=2
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from Tid_det
     where tid_id = #{tidId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.module.yf.model.TidModel">
-    insert into Tid_det (tid_id, tid_tm, tid_time, 
-      tid_ztbz, tid_jlrq, tid_jlry, 
-      tid_expireSpan, tid_expireDate, tid_bz
-      )
-    values (#{tidId,jdbcType=INTEGER}, #{tidTm,jdbcType=NVARCHAR}, #{tidTime,jdbcType=TIMESTAMP}, 
-      #{tidZtbz,jdbcType=INTEGER}, #{tidJlrq,jdbcType=TIMESTAMP}, #{tidJlry,jdbcType=NVARCHAR}, 
-      #{tidExpirespan,jdbcType=INTEGER}, #{tidExpiredate,jdbcType=TIMESTAMP}, #{tidBz,jdbcType=NVARCHAR}
-      )
+  <insert id="insert" parameterType="com.module.yf.model.TidModel" >
+    insert into Tid_det (tid_id, tid_tm, tid_time,
+    tid_ztbz, tid_jlrq, tid_jlry,
+    tid_expireSpan, tid_expireDate, tid_bz
+    )
+    values (#{tidId,jdbcType=INTEGER}, #{tidTm,jdbcType=NVARCHAR}, #{tidTime,jdbcType=TIMESTAMP},
+    #{tidZtbz,jdbcType=INTEGER}, #{tidJlrq,jdbcType=TIMESTAMP}, #{tidJlry,jdbcType=NVARCHAR},
+    #{tidExpirespan,jdbcType=INTEGER}, #{tidExpiredate,jdbcType=TIMESTAMP}, #{tidBz,jdbcType=NVARCHAR}
+    )
   </insert>
-  <insert id="insertSelective" parameterType="com.module.yf.model.TidModel">
+  <insert id="insertSelective" parameterType="com.module.yf.model.TidModel" >
     insert into Tid_det
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="tidId != null">
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="tidId != null" >
         tid_id,
       </if>
-      <if test="tidTm != null">
+      <if test="tidTm != null" >
         tid_tm,
       </if>
-      <if test="tidTime != null">
+      <if test="tidTime != null" >
         tid_time,
       </if>
-      <if test="tidZtbz != null">
+      <if test="tidZtbz != null" >
         tid_ztbz,
       </if>
-      <if test="tidJlrq != null">
+      <if test="tidJlrq != null" >
         tid_jlrq,
       </if>
-      <if test="tidJlry != null">
+      <if test="tidJlry != null" >
         tid_jlry,
       </if>
-      <if test="tidExpirespan != null">
+      <if test="tidExpirespan != null" >
         tid_expireSpan,
       </if>
-      <if test="tidExpiredate != null">
+      <if test="tidExpiredate != null" >
         tid_expireDate,
       </if>
-      <if test="tidBz != null">
+      <if test="tidBz != null" >
         tid_bz,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="tidId != null">
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="tidId != null" >
         #{tidId,jdbcType=INTEGER},
       </if>
-      <if test="tidTm != null">
+      <if test="tidTm != null" >
         #{tidTm,jdbcType=NVARCHAR},
       </if>
-      <if test="tidTime != null">
+      <if test="tidTime != null" >
         #{tidTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="tidZtbz != null">
+      <if test="tidZtbz != null" >
         #{tidZtbz,jdbcType=INTEGER},
       </if>
-      <if test="tidJlrq != null">
+      <if test="tidJlrq != null" >
         #{tidJlrq,jdbcType=TIMESTAMP},
       </if>
-      <if test="tidJlry != null">
+      <if test="tidJlry != null" >
         #{tidJlry,jdbcType=NVARCHAR},
       </if>
-      <if test="tidExpirespan != null">
+      <if test="tidExpirespan != null" >
         #{tidExpirespan,jdbcType=INTEGER},
       </if>
-      <if test="tidExpiredate != null">
+      <if test="tidExpiredate != null" >
         #{tidExpiredate,jdbcType=TIMESTAMP},
       </if>
-      <if test="tidBz != null">
+      <if test="tidBz != null" >
         #{tidBz,jdbcType=NVARCHAR},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.module.yf.model.TidModel">
+  <update id="updateByPrimaryKeySelective" parameterType="com.module.yf.model.TidModel" >
     update Tid_det
-    <set>
-      <if test="tidTm != null">
+    <set >
+      <if test="tidTm != null" >
         tid_tm = #{tidTm,jdbcType=NVARCHAR},
       </if>
-      <if test="tidTime != null">
+      <if test="tidTime != null" >
         tid_time = #{tidTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="tidZtbz != null">
+      <if test="tidZtbz != null" >
         tid_ztbz = #{tidZtbz,jdbcType=INTEGER},
       </if>
-      <if test="tidJlrq != null">
+      <if test="tidJlrq != null" >
         tid_jlrq = #{tidJlrq,jdbcType=TIMESTAMP},
       </if>
-      <if test="tidJlry != null">
+      <if test="tidJlry != null" >
         tid_jlry = #{tidJlry,jdbcType=NVARCHAR},
       </if>
-      <if test="tidExpirespan != null">
+      <if test="tidExpirespan != null" >
         tid_expireSpan = #{tidExpirespan,jdbcType=INTEGER},
       </if>
-      <if test="tidExpiredate != null">
+      <if test="tidExpiredate != null" >
         tid_expireDate = #{tidExpiredate,jdbcType=TIMESTAMP},
       </if>
-      <if test="tidBz != null">
+      <if test="tidBz != null" >
         tid_bz = #{tidBz,jdbcType=NVARCHAR},
       </if>
     </set>
     where tid_id = #{tidId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.module.yf.model.TidModel">
+  <update id="updateByPrimaryKey" parameterType="com.module.yf.model.TidModel" >
     update Tid_det
     set tid_tm = #{tidTm,jdbcType=NVARCHAR},
-      tid_time = #{tidTime,jdbcType=TIMESTAMP},
-      tid_ztbz = #{tidZtbz,jdbcType=INTEGER},
-      tid_jlrq = #{tidJlrq,jdbcType=TIMESTAMP},
-      tid_jlry = #{tidJlry,jdbcType=NVARCHAR},
-      tid_expireSpan = #{tidExpirespan,jdbcType=INTEGER},
-      tid_expireDate = #{tidExpiredate,jdbcType=TIMESTAMP},
-      tid_bz = #{tidBz,jdbcType=NVARCHAR}
+    tid_time = #{tidTime,jdbcType=TIMESTAMP},
+    tid_ztbz = #{tidZtbz,jdbcType=INTEGER},
+    tid_jlrq = #{tidJlrq,jdbcType=TIMESTAMP},
+    tid_jlry = #{tidJlry,jdbcType=NVARCHAR},
+    tid_expireSpan = #{tidExpirespan,jdbcType=INTEGER},
+    tid_expireDate = #{tidExpiredate,jdbcType=TIMESTAMP},
+    tid_bz = #{tidBz,jdbcType=NVARCHAR}
     where tid_id = #{tidId,jdbcType=INTEGER}
   </update>
-
 </mapper>

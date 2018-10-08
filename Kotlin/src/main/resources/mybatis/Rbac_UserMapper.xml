@@ -33,6 +33,12 @@
       #{chinaname,jdbcType=NVARCHAR}, #{usericon,jdbcType=NVARCHAR}, #{workdept,jdbcType=NVARCHAR}, 
       #{score,jdbcType=INTEGER})
   </insert>
+  <select id="selectByUsername" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from RBAC_User
+    where UserNo = #{username}
+  </select>
   <insert id="insertSelective" parameterType="com.module.yf.model.Rbac_User">
     insert into RBAC_User
     <trim prefix="(" suffix=")" suffixOverrides=",">

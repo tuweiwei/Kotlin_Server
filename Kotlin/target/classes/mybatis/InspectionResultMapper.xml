@@ -40,6 +40,12 @@
       #{result,jdbcType=NVARCHAR}, #{resultimg,jdbcType=VARCHAR}, #{createdate,jdbcType=TIMESTAMP}, 
       #{username,jdbcType=NVARCHAR}, #{remark,jdbcType=NVARCHAR})
   </insert>
+  <select id="listAll" resultType="com.module.yf.model.InspectionResult">
+    select
+    <include refid="Base_Column_List" />
+    from SpotInspection_Result
+
+  </select>
   <insert id="insertSelective" parameterType="com.module.yf.model.InspectionResult">
     insert into SpotInspection_Result
     <trim prefix="(" suffix=")" suffixOverrides=",">
